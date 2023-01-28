@@ -26,20 +26,12 @@ int GetNumber(string message)
 }
 
 int number = GetNumber("Digit in: ");
+int B = 0;
 while (number > 0)
 {
-    int B = 0;
     int A = number % 10;
-    B = B + A;
-    Console.WriteLine(B);
+    number = number / 10;
+    B =  B + A;
+    
 }
-
-
-
-
-
-// 2. Method. Number in to Array
-
-// 3. Method. Sum digit in number
-
-
+Console.WriteLine(B);
