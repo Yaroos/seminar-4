@@ -25,7 +25,7 @@ int GetNumber(string message)
     return resultNumber;
 }
 
-int number = GetNumber("Digit in: ");
+int number = GetNumber("Введите число: ");
 int B = 0;
 while (number > 0)
 {
@@ -34,4 +34,4 @@ while (number > 0)
     B =  B + A;
     
 }
-Console.WriteLine(B);
+Console.WriteLine($"Сумма цифр числа = {B}");
